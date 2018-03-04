@@ -2,7 +2,7 @@
 {
     internal class ExpenseVM : ViewModel
     {
-        private string _category;
+        private string _category = "Default category";
         public string Category
         {
             get => _category;
@@ -14,6 +14,13 @@
         {
             get => _amount;
             set { this.SetField(ref _amount, value); }
+        }
+
+        private string _date = "Default date";
+        public string Date
+        {
+            get => _date;
+            set { this.SetField(ref _date, value); }
         }
     }
 }

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickMoney.ExpenseView">
+  <ContentView.Content>
+      <StackLayout>
+            <Label Text="{Binding Path=Amount}" />
+            <Label Text="{Binding Path=Date}" />
+            <Label Text="{Binding Path=Category}" />
+      </StackLayout>
+  </ContentView.Content>
+</ContentView>
